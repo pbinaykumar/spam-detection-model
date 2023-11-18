@@ -5,6 +5,9 @@ import string
 from nltk.stem.porter import PorterStemmer
 import nltk
 
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+
 app = Flask(__name__)
 
 ps= PorterStemmer()
