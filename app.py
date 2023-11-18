@@ -4,9 +4,15 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 import nltk
+import subprocess
+
 
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
+
+# Run the pip command to upgrade and force-reinstall scipy
+subprocess.run(['pip', 'install', '--upgrade', '--force-reinstall', 'scipy'], check=True)
+
 
 app = Flask(__name__)
 
