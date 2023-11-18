@@ -1,0 +1,7 @@
+# render.yaml
+
+services:
+  - type: web
+    name: my-web-service
+    env: python=3.10
+    startCommand: gunicorn app:app
