@@ -42,5 +42,5 @@ def predict_spam():
     return render_template('home.html', text=text,prediction = prediction)
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
